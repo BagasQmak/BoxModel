@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-    width: 800px;
+    width: 960px;
     margin: 0 auto;
     background-color: white;
 }
@@ -42,7 +42,7 @@ body {
 }
 
 .hero {
-    height: 300px;
+    height: 360px;
     background-image: url(img/console.jpg);
     background-size: cover;
     background-position: 0 -20px;
@@ -51,33 +51,56 @@ body {
     border-bottom: 5px solid lightskyblue;
 }
 
-.content {
+.main {
+    width: 600px;
     padding: 20px;
+    box-sizing: border-box;
+    float: left;
 }
 
-.content h2 {
+.main h2 {
     font-size: 32px;
     font-weight: bold;
 }
 
-.content .penulis {
+.main .penulis {
     font-size: 12px;
     margin-top: -5px;
 }
 
-.content .penulis a {
+.main .penulis a {
     text-decoration: none;
     color: salmon;
 }
 
-.content .penulis a:hover {
+.main .penulis a:hover {
     background-color: lightskyblue;
     color: white;
 }
 
-.content p {
+.main p {
     margin-bottom: 20px;
     font-size: 15px;
+}
+
+.sidebar {
+    width: 300px;
+    padding: 20px;
+    float: right;
+}
+
+.sidebar h3 {
+    font-weight: bold;
+    color: #666;
+}
+
+.sidebar img {
+    float: left;
+    margin-right: 10px;
+}
+
+.sidebar p {
+    font: 12px/18px arial;
 }
 
 .footer {
@@ -89,4 +112,17 @@ body {
     font-size: 16px;
     text-align: center;
     padding: 10px;
+}
+
+
+
+/* Clearfix */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
 }
